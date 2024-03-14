@@ -1,0 +1,13 @@
+{
+    "name": "99buttons",
+    "version": "1.0.0",
+    "description": "A utility-based CSS framework for buttons",
+    "scripts": {
+      "build-css": "node-sass src/scss/main.scss dist/css/main.css",
+      "build-css-min": "node-sass src/scss/main.scss dist/css/main.min.css --output-style compressed"
+    },
+    "devDependencies": {
+      "node-sass": "^6.0.0"
+    }
+  }
+  
