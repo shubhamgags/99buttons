@@ -1,9 +1,14 @@
 // main.scss
 
+
 // Import variables
 @import 'variables';
 
-// Import button styles
-@import 'buttons';
+// Import Mixins
+@import 'mixins';
 
-// Add more imports for other SCSS files as needed
+// Import base styles
+@import 'base';
+
+// Import button
+@import 'buttons';

@@ -1,0 +1,28 @@
+// _base.scss
+
+
+// Map of button styles
+
+$button-styles: (
+
+  primary: (
+    background-color: blue,
+    color: white,
+    border: none,
+    cursor: pointer,
+  ),
+
+  secondary: (
+    background-color: green,
+    color: white,
+    border: none,
+    cursor: pointer,
+  ),
+
+  third: (
+    background-color: rgb(34, 193, 233),
+    color: rgb(0, 0, 0),
+    border: 0 0 0 10,
+    cursor: pointer,
+  ),
+);

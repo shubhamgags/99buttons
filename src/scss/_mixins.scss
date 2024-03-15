@@ -1,0 +1,60 @@
+// _mixins.scss
+
+
+// Import base styles
+@import 'base';
+
+// Mixin for static sizes
+@mixin button-size($padding, $font-size) {
+    padding: $padding;
+    font-size: $font-size;
+  }
+
+
+// Mixin for responsive sizes
+@mixin responsive-size($sm-padding, $sm-font-size, $md-padding, $md-font-size, $lg-padding, $lg-font-size) {
+    // Apply small size styles by default
+    @include button-size($sm-padding, $sm-font-size);
+  
+    // Medium size styles
+    @media screen and (min-width: $mobile-max-width) {
+      @include button-size($md-padding, $md-font-size);
+    }
+  
+    // Large size styles
+    @media screen and (min-width: $tablet-max-width) {
+      @include button-size($lg-padding, $lg-font-size);
+    }
+  }
+
+
+// Mixin to generate base styles
+@mixin generate-base-styles($type) {
+  @each $key, $value in map-get($button-styles, $type) {
+    #{$key}: #{$value};
+  }
+}
+
+
+// Mixin to generate size variants for buttons
+@mixin generate-button-variants($button-base-class) {
+  .btn-#{$button-base-class}-sm {
+    @include generate-base-styles($button-base-class);
+    @include button-size($button-padding-sm, $button-font-size-sm);
+  }
+
+  .btn-#{$button-base-class}-md {
+    @include generate-base-styles($button-base-class);
+    @include button-size($button-padding-md, $button-font-size-md);
+  }
+
+  .btn-#{$button-base-class}-lg {
+    @include generate-base-styles($button-base-class);
+    @include button-size($button-padding-lg, $button-font-size-lg);
+  }
+
+  .btn-#{$button-base-class}-rs {
+    @include generate-base-styles($button-base-class);
+    @include responsive-size($button-padding-sm, $button-font-size-sm, $button-padding-md, $button-font-size-md, $button-padding-lg, $button-font-size-lg);
+  }
+}
