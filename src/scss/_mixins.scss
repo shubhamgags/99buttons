@@ -3,29 +3,35 @@
 
 // Import base styles
 @import 'base';
+// Import variables
+@import 'variables';
+
 
 // Mixin for static sizes
 @mixin button-size($padding, $font-size) {
-    padding: $padding;
-    font-size: $font-size;
-  }
+  padding: $padding;
+  font-size: $font-size;
+}
 
 
 // Mixin for responsive sizes
-@mixin responsive-size($sm-padding, $sm-font-size, $md-padding, $md-font-size, $lg-padding, $lg-font-size) {
-    // Apply small size styles by default
-    @include button-size($sm-padding, $sm-font-size);
-  
-    // Medium size styles
-    @media screen and (min-width: $mobile-max-width) {
-      @include button-size($md-padding, $md-font-size);
-    }
-  
-    // Large size styles
-    @media screen and (min-width: $tablet-max-width) {
-      @include button-size($lg-padding, $lg-font-size);
-    }
+@mixin responsive-size {
+  // Apply medium size styles by default
+  @include button-size(map-get(map-get($button-sizes, 'sm'), 'padding'),
+    map-get(map-get($button-sizes, 'sm'), 'font-size'));
+
+  // Medium size styles
+  @media screen and (min-width: $tablet-max-width) {
+    @include button-size(map-get(map-get($button-sizes, 'md'), 'padding'),
+      map-get(map-get($button-sizes, 'md'), 'font-size'));
   }
+
+  // Large size styles
+  @media screen and (min-width: $desktop-min-width) {
+    @include button-size(map-get(map-get($button-sizes, 'lg'), 'padding'),
+      map-get(map-get($button-sizes, 'lg'), 'font-size'));
+  }
+}
 
 
 // Mixin to generate base styles
@@ -36,25 +42,65 @@
 }
 
 
+// Mixin to generate button color
+@mixin generate-button-color($color) {
+  background-color: $color;
+}
+
+
 // Mixin to generate size variants for buttons
 @mixin generate-button-variants($button-base-class) {
-  .btn-#{$button-base-class}-sm {
+  .btn-#{$button-base-class} {
     @include generate-base-styles($button-base-class);
-    @include button-size($button-padding-sm, $button-font-size-sm);
+    @include button-size(map-get(map-get($button-sizes, 'sm'), 'padding'),
+      map-get(map-get($button-sizes, 'sm'), 'font-size'));
   }
 
-  .btn-#{$button-base-class}-md {
-    @include generate-base-styles($button-base-class);
-    @include button-size($button-padding-md, $button-font-size-md);
-  }
-
-  .btn-#{$button-base-class}-lg {
-    @include generate-base-styles($button-base-class);
-    @include button-size($button-padding-lg, $button-font-size-lg);
+  @each $size, $values in $button-sizes {
+    .btn-#{$button-base-class}-#{$size} {
+      @include generate-base-styles($button-base-class);
+      @include button-size(map-get($values, 'padding'), map-get($values, 'font-size'));
+    }
   }
 
   .btn-#{$button-base-class}-rs {
     @include generate-base-styles($button-base-class);
-    @include responsive-size($button-padding-sm, $button-font-size-sm, $button-padding-md, $button-font-size-md, $button-padding-lg, $button-font-size-lg);
+    @include responsive-size;
   }
+}
+
+
+
+// Mixin to generate size variants for buttons with colors
+@mixin generate-button-variants-with-color($button-base-class) {
+  @each $color-name, $color-value in $button-colors {
+
+    .btn-#{$button-base-class}-#{$color-name} {
+      @include generate-base-styles($button-base-class);
+      @include generate-button-color($color-value);
+      @include button-size(map-get(map-get($button-sizes, 'sm'), 'padding'),
+        map-get(map-get($button-sizes, 'sm'), 'font-size'));
+    }
+
+    @each $size, $values in $button-sizes {
+      .btn-#{$button-base-class}-#{$color-name}-#{$size} {
+        @include generate-base-styles($button-base-class);
+        @include generate-button-color($color-value);
+        @include button-size(map-get($values, 'padding'), map-get($values, 'font-size'));
+      }
+    }
+
+    .btn-#{$button-base-class}-#{$color-name}-rs {
+      @include generate-base-styles($button-base-class);
+      @include generate-button-color($color-value);
+      @include responsive-size;
+    }
+  }
+}
+
+
+// Mixin to generate all button variants
+@mixin generate-buttons($button-base-class) {
+  @include generate-button-variants($button-base-class);
+  @include generate-button-variants-with-color($button-base-class);
 }

@@ -1,53 +1,292 @@
-.btn-primary-sm {
-  background-color: blue;
+.btn-primary {
   color: white;
-  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-sm {
+  color: white;
+  border-radius: 25px;
   cursor: pointer;
   padding: 5px 10px;
   font-size: 12px;
 }
 
 .btn-primary-md {
-  background-color: blue;
   color: white;
-  border: none;
+  border-radius: 25px;
   cursor: pointer;
   padding: 10px 20px;
   font-size: 16px;
 }
 
 .btn-primary-lg {
-  background-color: blue;
   color: white;
-  border: none;
+  border-radius: 25px;
   cursor: pointer;
   padding: 15px 30px;
   font-size: 20px;
 }
 
 .btn-primary-rs {
-  background-color: blue;
   color: white;
-  border: none;
+  border-radius: 25px;
   cursor: pointer;
   padding: 5px 10px;
   font-size: 12px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .btn-primary-rs {
     padding: 10px 20px;
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .btn-primary-rs {
     padding: 15px 30px;
     font-size: 20px;
   }
 }
 
-.btn-secondary-sm {
+.btn-primary-default {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-default-sm {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-default-md {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-primary-default-lg {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-primary-default-rs {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary-default-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-primary-default-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-primary-primary {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-primary-sm {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-primary-md {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-primary-primary-lg {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-primary-primary-rs {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary-primary-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-primary-primary-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-primary-secondary {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
   background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-secondary-sm {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-secondary-md {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: green;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-primary-secondary-lg {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: green;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-primary-secondary-rs {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary-secondary-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-primary-secondary-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-primary-danger {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-danger-sm {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-primary-danger-md {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: red;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-primary-danger-lg {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: red;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-primary-danger-rs {
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary-danger-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-primary-danger-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-secondary {
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-sm {
   color: white;
   border: none;
   cursor: pointer;
@@ -56,7 +295,6 @@
 }
 
 .btn-secondary-md {
-  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
@@ -65,7 +303,6 @@
 }
 
 .btn-secondary-lg {
-  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
@@ -74,69 +311,248 @@
 }
 
 .btn-secondary-rs {
-  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
   padding: 5px 10px;
   font-size: 12px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .btn-secondary-rs {
     padding: 10px 20px;
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .btn-secondary-rs {
     padding: 15px 30px;
     font-size: 20px;
   }
 }
 
-.btn-third-sm {
-  background-color: rgb(34, 193, 233);
-  color: rgb(0, 0, 0);
-  border: 0 0 0 10;
+.btn-secondary-default {
+  color: white;
+  border: none;
   cursor: pointer;
+  background-color: grey;
   padding: 5px 10px;
   font-size: 12px;
 }
 
-.btn-third-md {
-  background-color: rgb(34, 193, 233);
-  color: rgb(0, 0, 0);
-  border: 0 0 0 10;
+.btn-secondary-default-sm {
+  color: white;
+  border: none;
   cursor: pointer;
+  background-color: grey;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-default-md {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: grey;
   padding: 10px 20px;
   font-size: 16px;
 }
 
-.btn-third-lg {
-  background-color: rgb(34, 193, 233);
-  color: rgb(0, 0, 0);
-  border: 0 0 0 10;
+.btn-secondary-default-lg {
+  color: white;
+  border: none;
   cursor: pointer;
+  background-color: grey;
   padding: 15px 30px;
   font-size: 20px;
 }
 
-.btn-third-rs {
-  background-color: rgb(34, 193, 233);
-  color: rgb(0, 0, 0);
-  border: 0 0 0 10;
+.btn-secondary-default-rs {
+  color: white;
+  border: none;
   cursor: pointer;
+  background-color: grey;
   padding: 5px 10px;
   font-size: 12px;
 }
-@media screen and (min-width: 576px) {
-  .btn-third-rs {
+@media screen and (min-width: 768px) {
+  .btn-secondary-default-rs {
     padding: 10px 20px;
     font-size: 16px;
   }
 }
+@media screen and (min-width: 992px) {
+  .btn-secondary-default-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-secondary-primary {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-primary-sm {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-primary-md {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-secondary-primary-lg {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-secondary-primary-rs {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  padding: 5px 10px;
+  font-size: 12px;
+}
 @media screen and (min-width: 768px) {
-  .btn-third-rs {
+  .btn-secondary-primary-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-secondary-primary-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-secondary-secondary {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-secondary-sm {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-secondary-md {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-secondary-secondary-lg {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-secondary-secondary-rs {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-secondary-secondary-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-secondary-secondary-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-secondary-danger {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-danger-sm {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-secondary-danger-md {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-secondary-danger-lg {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-secondary-danger-rs {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-secondary-danger-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-secondary-danger-rs {
     padding: 15px 30px;
     font-size: 20px;
   }

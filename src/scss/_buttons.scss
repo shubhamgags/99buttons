@@ -3,15 +3,14 @@
 
 // Import variables
 @import 'variables';
-
+// Import base styles
+@import 'base';
 // Import Mixins
 @import 'mixins';
 
 
+// Generate buttons of each style with all variants
+@each $name, $values in $button-styles {
+    @include generate-buttons($name);
+}
 
-
-@include generate-button-variants('primary');
-
-@include generate-button-variants('secondary');
-
-@include generate-button-variants('third');
