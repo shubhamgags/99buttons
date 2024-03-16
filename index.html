@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,54 @@
     <!-- Link to your compiled CSS -->
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
-<body>
-    <div style="padding: 20px;">
-        <h2>Primary Button Sizes</h2>
-        <button class="btn-primary-sm">Small Button</button>
-        <button class="btn-primary-md">Medium Button</button>
-        <button class="btn-primary-lg">Large Button</button>
 
-        <h2>Secondary Button Sizes</h2>
-        <button class="btn-third-sm">Small Button</button>
-        <button class="btn-third-md">Medium Button</button>
-        <button class="btn-third-lg">Large Button</button>
+<body style="background-color: whitesmoke; padding: 30px; font-family: system-ui, -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 
-        <h2>Responsive Buttons</h2>
-        <p>Resize the browser window to see how the button's size changes.</p>
-        <button class="btn-primary-rs">Responsive Button</button>
-        <button class="btn-third-rs">Responsive Button</button>
+    <div id="button-container" style="padding: 20px; display: flex; flex-wrap: wrap; gap: 10px;">
+        <h2 style="width: 100%;">Pill Type Buttons</h2>
     </div>
 
+    <div id="circle-container" style="padding: 20px; display: flex; flex-wrap: wrap; gap: 10px;">
+        <h2 style="width: 100%;">Circle Type Buttons</h2>
+    </div>
+
+    <script>
+        const buttonTypes = [
+            'btn-pill',
+            'btn-circle'
+        ];
+
+        const buttonVariants = [
+            'btn-w',
+            'btn-dark',
+            'btn-b',
+            'btn-primary',
+            'btn-success',
+            'btn-info',
+            'btn-warning',
+            'btn-danger',
+            'btn-innovation',
+        ];
+
+        const buttonSizes = [
+            'btn-md'
+        ];
+
+        const addButton = (containerId, type, variant, size) => {
+            const container = document.getElementById(containerId);
+            const button = document.createElement('button');
+            button.textContent = 'Button';
+            button.classList.add(type, variant, size);
+            container.appendChild(button);
+        };
+
+
+        buttonVariants.forEach(variant => {
+            addButton('button-container', buttonTypes[0], variant, buttonSizes[0]);
+            addButton('circle-container', buttonTypes[1], variant, buttonSizes[0]);
+        });
+
+    </script>
 </body>
+
 </html>

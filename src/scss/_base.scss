@@ -5,16 +5,25 @@
 
 $button-styles: (
 
-  primary: (
-    color: white,
+  pill: (
     border-radius: 25px,
     cursor: pointer,
+    display: inline-flex, // Allows the button to contain and center content
+    align-items: center, // Vertically centers the content
+    justify-content: center, // Horizontally centers the content
+    font-family: $default-font-family,
+    font-weight: bold, // Make text bold
   ),
 
-  secondary: (
-    color: white,
-    border: none,
+  circle: (    
+    border-radius: 50%, // Makes the shape circular
     cursor: pointer,
+    display: inline-flex, // Allows the button to contain and center content
+    align-items: center, // Vertically centers the content
+    justify-content: center, // Center content vertically
+    flex-direction: column, // Stack text vertically
+    overflow: hidden, // Hide any overflow text
+    font-family: $default-font-family,
+    font-weight: bold, // Make text bold
   ),
-
 );

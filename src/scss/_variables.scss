@@ -1,5 +1,12 @@
 // _variables.scss
 
+// Import sass math 
+@use "sass:math";
+
+
+// Default Values
+$button-default-bg-color: #f0f0f0;
+$default-font-family: system-ui -apple-system "Helvetica Neue" Helvetica Arial sans-serif;
 
 // Size Map
 $button-sizes: (
@@ -8,16 +15,62 @@ $button-sizes: (
   'lg': (padding: 15px 30px, font-size: 20px)
 );
 
+// Size Map for circular buttons
+$circle-sizes: (
+  'sm': 40px,
+  'md': 60px,
+  'lg': 80px,
+);
+
 // Color Map
 $button-colors: (
-  default: grey,
-  primary: blue,
-  secondary: green,
-  danger: red
+  // Base
+  nlight: #f8f9fa, // Very light gray, good for backgrounds
+  ndark: #343a40, // Dark gray, suitable for text
+  w: #ffffff,
+  b: #000000,
+
+  // Primary UI colors
+  primary: #2b0374, // A shade of blue
+  secondary: #6c757d, // A medium gray, versatile for less prominent elements
+  success: #28a745, // Green, indicates success or positive action
+  info: #17a2b8, // Teal, for informational messages
+  warning: #ffc107, // Yellow, for warnings or caution
+  danger: #dc3545, // Red, for errors or dangerous actions
+
+  // Additional UI colors
+  light: #e2e6ea, // Adjusted very light gray, alternative to white for backgrounds
+  dark: #495057, // Adjusted dark gray, alternative to black for text
+  muted: #adb5bd, // Adjusted muted gray, for secondary text or elements
+
+  // Semantic and status colors
+  approved: #218838, // Adjusted green, similar to success, for approvals
+  pending: #fd7e14, // Adjusted orange, indicates pending status or need for attention
+  rejected: #c82333, // Adjusted darker red, similar to danger, for rejections or failed statuses
+
+  // Creative color
+  innovation: #6f42c1, // Shade of purple, symbolizing creativity and wisdom
 );
+
 
 // Breakpoints
 $mobile-max-width: 576px; // Mobile devices
 $tablet-max-width: 768px; // Tablets
 $desktop-min-width: 992px; // Desktops
+
+
+
+// Utility Functions 
+@function luminance($color) {
+  $r: math.div(red($color), 255);
+  $g: math.div(green($color), 255);
+  $b: math.div(blue($color), 255);
+
+  $r: if($r < 0.03928, math.div($r, 12.92), math.pow(math.div($r + 0.055, 1.055), 2.4));
+  $g: if($g < 0.03928, math.div($g, 12.92), math.pow(math.div($g + 0.055, 1.055), 2.4));
+  $b: if($b < 0.03928, math.div($b, 12.92), math.pow(math.div($b + 0.055, 1.055), 2.4));
+
+  @return (0.2126 * $r + 0.7152 * $g + 0.0722 * $b);
+}
+
 

@@ -1,561 +1,173 @@
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-md {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-rs {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .btn-rs {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn-rs {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+.btn-nlight {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.btn-ndark {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-w {
+  background-color: #ffffff;
+  color: black;
+}
+
+.btn-b {
+  background-color: #000000;
+  color: white;
+}
+
 .btn-primary {
+  background-color: #2b0374;
   color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-sm {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-md {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-primary-lg {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-primary-rs {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-primary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-primary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-}
-
-.btn-primary-default {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-default-sm {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-default-md {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: grey;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-primary-default-lg {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: grey;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-primary-default-rs {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-primary-default-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-primary-default-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-}
-
-.btn-primary-primary {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-primary-sm {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-primary-md {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: blue;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-primary-primary-lg {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: blue;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-primary-primary-rs {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-primary-primary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-primary-primary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-}
-
-.btn-primary-secondary {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-secondary-sm {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-secondary-md {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: green;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-primary-secondary-lg {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: green;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-primary-secondary-rs {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-primary-secondary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-primary-secondary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-}
-
-.btn-primary-danger {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-danger-sm {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-primary-danger-md {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: red;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-primary-danger-lg {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: red;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-primary-danger-rs {
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-primary-danger-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-primary-danger-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
 }
 
 .btn-secondary {
+  background-color: #6c757d;
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
 }
 
-.btn-secondary-sm {
+.btn-success {
+  background-color: #28a745;
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
 }
 
-.btn-secondary-md {
+.btn-info {
+  background-color: #17a2b8;
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 16px;
 }
 
-.btn-secondary-lg {
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 15px 30px;
-  font-size: 20px;
+.btn-warning {
+  background-color: #ffc107;
+  color: black;
 }
 
-.btn-secondary-rs {
+.btn-danger {
+  background-color: #dc3545;
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-secondary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-secondary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
 }
 
-.btn-secondary-default {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
+.btn-light {
+  background-color: #e2e6ea;
+  color: black;
 }
 
-.btn-secondary-default-sm {
+.btn-dark {
+  background-color: #495057;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
 }
 
-.btn-secondary-default-md {
+.btn-muted {
+  background-color: #adb5bd;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: grey;
-  padding: 10px 20px;
-  font-size: 16px;
 }
 
-.btn-secondary-default-lg {
+.btn-approved {
+  background-color: #218838;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: grey;
-  padding: 15px 30px;
-  font-size: 20px;
 }
 
-.btn-secondary-default-rs {
+.btn-pending {
+  background-color: #fd7e14;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: grey;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-secondary-default-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-secondary-default-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
 }
 
-.btn-secondary-primary {
+.btn-rejected {
+  background-color: #c82333;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
 }
 
-.btn-secondary-primary-sm {
+.btn-innovation {
+  background-color: #6f42c1;
   color: white;
-  border: none;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
 }
 
-.btn-secondary-primary-md {
-  color: white;
-  border: none;
+.btn-pill {
+  border-radius: 25px;
   cursor: pointer;
-  background-color: blue;
-  padding: 10px 20px;
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui -apple-system Helvetica Neue Helvetica Arial sans-serif;
+  font-weight: bold;
 }
 
-.btn-secondary-primary-lg {
-  color: white;
-  border: none;
+.btn-circle {
+  border-radius: 50%;
   cursor: pointer;
-  background-color: blue;
-  padding: 15px 30px;
-  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: system-ui -apple-system Helvetica Neue Helvetica Arial sans-serif;
+  font-weight: bold;
 }
 
-.btn-secondary-primary-rs {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: blue;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-secondary-primary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-secondary-primary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
+.btn-circle.btn-sm {
+  aspect-ratio: 1;
+  padding: 8px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
-.btn-secondary-secondary {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
+.btn-circle.btn-sm > span {
+  white-space: nowrap;
 }
 
-.btn-secondary-secondary-sm {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
+.btn-circle.btn-md {
+  aspect-ratio: 1;
+  padding: 12px;
+  max-width: 90px;
+  max-height: 90px;
 }
 
-.btn-secondary-secondary-md {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: green;
-  padding: 10px 20px;
-  font-size: 16px;
+.btn-circle.btn-md > span {
+  white-space: nowrap;
 }
 
-.btn-secondary-secondary-lg {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: green;
-  padding: 15px 30px;
-  font-size: 20px;
+.btn-circle.btn-lg {
+  aspect-ratio: 1;
+  padding: 16px;
+  max-width: 120px;
+  max-height: 120px;
 }
 
-.btn-secondary-secondary-rs {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: green;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-secondary-secondary-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-secondary-secondary-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-}
-
-.btn-secondary-danger {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-secondary-danger-sm {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.btn-secondary-danger-md {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-.btn-secondary-danger-lg {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  padding: 15px 30px;
-  font-size: 20px;
-}
-
-.btn-secondary-danger-rs {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-@media screen and (min-width: 768px) {
-  .btn-secondary-danger-rs {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn-secondary-danger-rs {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
+.btn-circle.btn-lg > span {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=main.css.map */

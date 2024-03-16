@@ -9,8 +9,42 @@
 @import 'mixins';
 
 
-// Generate buttons of each style with all variants
-@each $name, $values in $button-styles {
-    @include generate-buttons($name);
+// Generating base classes for sizes
+@each $size, $values in $button-sizes {
+    .btn-#{$size} {
+        @include button-size($size);
+    }
 }
 
+.btn-rs {
+    @include responsive-size;
+}
+
+// Generating base classes for colors
+@each $color-name, $color-value in $button-colors {
+    .btn-#{$color-name} {
+        @include generate-button-color-luminance($color-value);
+    }
+}
+
+// Generating base classes for styles
+@each $type, $values in $button-styles {
+    .btn-#{$type} {
+        @include generate-base-styles($type);
+    }
+}
+
+
+// Dynamically generate .btn-circle.size classes
+@each $size, $diameter in $circle-sizes {
+    .btn-circle.btn-#{$size} {
+        aspect-ratio: 1; // Maintain aspect ratio for circular shape
+        padding: calc($diameter/5);
+        max-width: calc($diameter * 1.5); // Limit the width based size
+        max-height: calc($diameter * 1.5); // Limit the height based size
+    }
+
+    .btn-circle.btn-#{$size}>span {
+        white-space: nowrap; // Prevent wrapping of individual lines
+    }
+}
