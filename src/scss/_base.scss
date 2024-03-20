@@ -5,25 +5,16 @@
 
 $button-styles: (
 
-  pill: (
-    border-radius: 25px,
-    cursor: pointer,
-    display: inline-flex, // Allows the button to contain and center content
-    align-items: center, // Vertically centers the content
-    justify-content: center, // Horizontally centers the content
-    font-family: $default-font-family,
-    font-weight: bold, // Make text bold
-  ),
+  square: (border-radius: 0px),
 
-  circle: (    
-    border-radius: 50%, // Makes the shape circular
-    cursor: pointer,
-    display: inline-flex, // Allows the button to contain and center content
-    align-items: center, // Vertically centers the content
-    justify-content: center, // Center content vertically
+  pill: (border-radius: 25px),
+
+  circle: (border-radius: 50%,
     flex-direction: column, // Stack text vertically
     overflow: hidden, // Hide any overflow text
-    font-family: $default-font-family,
-    font-weight: bold, // Make text bold
   ),
+
+  random: (
+    clip-path: xywh(0 5px 100% 75% round 15% 0),
+  )
 );

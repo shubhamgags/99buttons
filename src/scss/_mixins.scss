@@ -1,5 +1,6 @@
 // _mixins.scss
 
+@use "sass:meta";
 
 // Import base styles
 @import 'base';
@@ -48,6 +49,17 @@
 
 // Mixin to generate base styles
 @mixin generate-base-styles($type) {     
+  // base properties for every style
+  // cursor
+  cursor: pointer;
+  // text position
+  display: inline-flex; // Allows the button to contain and center content
+  align-items: center; // Vertically centers the content
+  justify-content: center; // Horizontally centers the content
+  // font
+  font-family: #{meta.inspect($default-font-family)};
+  font-weight: bold; // Make text bold
+  // Different properties 
   @each $key, $value in map-get($button-styles, $type) {
     #{$key}: #{$value};
   }
